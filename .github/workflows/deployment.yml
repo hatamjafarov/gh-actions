@@ -17,6 +17,7 @@ jobs:
       - name: Success
         run: echo "Linting passed"
   deploy: 
+    needs: lint
     runs-on: ubuntu-latest
     steps: 
       - name: Get code
